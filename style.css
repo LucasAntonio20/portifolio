@@ -12,13 +12,15 @@ body {
     background-color: #F0F4F7;
 }
 
-.header {
+/* header */
+
+header {
+    background-color: #E5E5E5;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #E5E5E5;
+    justify-content: space-between;
+    padding: 10px 60px;
 }
 
 .header-img {
@@ -37,27 +39,61 @@ body {
     font-size: 18px;
 }
 
-.content {
-    margin-bottom: 48px;
-}
 
-.content-main {
+/* main */
+
+.home {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    padding: 0px 10%;
 }
 
+.home-text h1 {
+    font-family: 'Sarala', sans-serif;
+    font-size: 9vh;
+}
+
+.home-name {
+    color: #EE6060;
+    animation: blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 3px solid;
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80vh;
+    padding: 0px 10%;
+}
+
+.about-text{
+    font-family: 'Sarala', sans-serif;
+    font-size: 3vh;
+    max-width: 500px;
+}
 /* footer */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #E5E5E5;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     padding-top: 30px;
     color: #000000;
@@ -105,7 +141,7 @@ footer {
 
 .footer-bottom {
     background: #d8d1d1;
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
