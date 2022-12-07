@@ -133,7 +133,7 @@ header {
 .skills h2 {
     font-family: 'Sarala', sans-serif;
     font-size: 5vh;
-    padding: 0px 10%;
+    padding: 0px 8%;
 }
 
 .skills-icons {
@@ -145,7 +145,7 @@ header {
 }
 
 .skills-icons li{
-    margin: 5px 20px;
+    margin: 5px 15px;
 }
 
 .skills-icons li img{
@@ -153,9 +153,11 @@ header {
     height: 5rem;
 }
 
-.skills-icons li img:hover{
-    width: 5.3rem;
-    height: 5.3rem;
+.skills-icons p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;
 }
 
 /* footer */
