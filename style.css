@@ -65,6 +65,10 @@ header.dark .header-menu-item{
     color: var(--details-color);
 }
 
+header.dark .header-menu-item:hover{
+    color: var(--details-color);
+}
+
 .darkorlight {
     opacity: 0;
     position: absolute;
