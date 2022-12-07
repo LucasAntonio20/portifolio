@@ -6,15 +6,17 @@ linkedin_icon.addEventListener("mouseover", function() {
 })
 
 linkedin_icon.addEventListener("mouseout", function() {
-    this.style.color = "var(--black-color)"
+    this.style.color = "var(--details-color)"
 })
 
 github_icon.addEventListener("mouseover", function() {
-    this.style.color = "var(--github-color)";
+    if(footer.className === 'dark') this.style.color = "var(--github-dark-color)"
+    else this.style.color = "var(--github-color)";
+    
 })
 
 github_icon.addEventListener("mouseout", function() {
-    this.style.color = "var(--black-color)"
+     this.style.color = "var(--details-color)";
 })
 
 const menu = document.querySelector('.menu');
@@ -86,6 +88,7 @@ const darkorlightbtn = document.getElementById('btndarkorlight');
 
 var header = document.querySelector('header');
 var main = document.querySelector('main');
+var footer = document.querySelector('footer');
 
 darkorlightbtn.addEventListener('change', darkMode);
 
@@ -94,4 +97,5 @@ function darkMode() {
     header.classList.toggle('dark');
     menu.classList.toggle('dark');
     main.classList.toggle('dark');
+    footer.classList.toggle('dark');
 }

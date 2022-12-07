@@ -6,10 +6,11 @@
     --color-hf-primary: #E5E5E5;
     --color-hf-secondary: #353535;
     --footer-bottom-color: #d8d1d1;
+    --footer-bottom-color-secondary: #272727;
     --details-color: #EE6060;
-    --black-color: #000000;
     --linkedin-color: #0a66c2;
     --github-color: #333333;
+    --github-dark-color: #f5f5f5;
 }
 
 * {
@@ -149,6 +150,7 @@ hr {
 }
 
 main.dark hr{
+    transition: all 0.5s;
     background-color: var(--color-hf-secondary);
 }
 
@@ -217,6 +219,7 @@ main.dark .home-title {
 }
 
 main.dark .about-text {
+    transition: all 0.5s;
     color: var(--color-hf-primary);
 }
 
@@ -237,6 +240,7 @@ main.dark .about-text {
 }
 
 main.dark .skills h2 {
+    transition: all 0.5s;
     color: var(--color-hf-primary);
 }
 
@@ -266,12 +270,14 @@ main.dark .skills h2 {
 }
 
 main.dark .skills-icons p {
+    transition: all 0.5s;
     color: var(--color-hf-primary);
 }
 
 /* footer */
 
 footer {
+    transition: all 0.5s;
     position: relative;
     bottom: 0;
     left: 0;
@@ -281,7 +287,11 @@ footer {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     padding-top: 30px;
-    color: var(--black-color);
+}
+
+footer.dark {
+    transition: all 0.5s;
+    background-color: var(--color-hf-secondary);
 }
 
 .footer-content {
@@ -296,7 +306,13 @@ footer {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
+    color: var(--color-hf-secondary);
     line-height: 3rem;
+}
+
+footer.dark .footer-content h3 {
+    transition: all 0.5s;
+    color: var(--color-hf-primary);
 }
 
 .socials {
@@ -313,7 +329,7 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--details-color);
 }
 
 .socials a i {
@@ -331,11 +347,21 @@ footer {
     text-align: center;
 }
 
+footer.dark .footer-bottom  {
+    transition: all 0.5s;
+    background-color: var(--footer-bottom-color-secondary);
+}
+
 .footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
     font-style: italic;
+}
+
+footer.dark .footer-bottom p {
+    transition: all 0.5s;
+    color: #fff;
 }
 
 @media (max-width:629px) {
