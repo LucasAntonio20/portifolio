@@ -154,8 +154,8 @@ header {
 }
 
 .skills-icons li img:hover{
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 5.3rem;
+    height: 5.3rem;
 }
 
 /* footer */
@@ -282,4 +282,7 @@ footer {
         font-size: 3rem;
     }
     
+    .about {
+        height: 90vh;
+    }
 }
