@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sarala:wght@400;700&display=swap');
-
-:root{
-    --color-body-primary: #F0F4F7;
+/*
+--color-body-primary: #F0F4F7;
     --color-body-secondary: #4B4B4B;
     --color-hf-primary: #E5E5E5;
     --color-hf-secondary: #353535;
     --footer-bottom-color: #d8d1d1;
     --footer-bottom-color-secondary: #272727;
+    --details-color: #EE6060;
+*/
+:root{
+    --color-body-primary: #F8F9FA;
+    --color-body-secondary: #495057;
+    --color-hf-primary: #E9ECEF;
+    --color-hf-secondary: #343A40;
+    --footer-bottom-color: #DEE2E6;
+    --footer-bottom-color-secondary: #212529;
     --details-color: #EE6060;
     --linkedin-color: #0a66c2;
     --github-color: #333333;
@@ -50,7 +58,7 @@ header.dark {
 
 .header-menu-item {
     font-family: 'Sarala', sans-serif;
-    color: var(--color-hf-secondary);
+    color: var(--color-body-secondary);
     font-weight: 400;
     font-size: 18px;
     transition: all 0.3s;
@@ -58,7 +66,7 @@ header.dark {
 
 header.dark .header-menu-item{
     transition: all 0.5s;
-    color: var(--color-hf-primary);
+    color: var(--color-body-primary);
 }
 
 .header-menu-item:hover {
@@ -75,7 +83,7 @@ header.dark .header-menu-item:hover{
 }
 
 .label {
-    background-color: var(--color-hf-secondary);
+    background-color: var(--color-body-secondary);
     border-radius: 55px;
     cursor: pointer;
     display: flex;
@@ -90,11 +98,11 @@ header.dark .header-menu-item:hover{
 
 header.dark .label{
     transition: all 0.5s;
-    background-color: var(--color-hf-primary);
+    background-color: var(--color-body-primary);
 }
 
 .label .ball {
-    background-color: var(--color-hf-primary);
+    background-color: var(--color-body-primary);
     border-radius: 50%;
     position: absolute;
     top: 4px;
@@ -107,7 +115,7 @@ header.dark .label{
 
 header.dark .label .ball{
     transition: all 0.5s;
-    background-color: var(--color-hf-secondary);
+    background-color: var(--color-body-secondary);
 }
 
 .darkorlight:checked + label .ball {
@@ -128,7 +136,7 @@ header.dark .label .ball{
 }
 
 .menu.dark .bar {
-    background-color: var(--color-hf-primary);
+    background-color: var(--color-body-primary);
 }
 
 .menu .bar {
@@ -136,7 +144,7 @@ header.dark .label .ball{
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background-color: var(--color-hf-secondary);
+    background-color: var(--color-body-secondary);
     margin: 5px;
     transition: all 0.1s;
 }
@@ -192,12 +200,13 @@ main.dark {
 }
 
 .home-title {
-    color: var(--color-hf-secondary);
+    transition: all 0.5s;
+    color: var(--color-body-secondary);
 }
 
 main.dark .home-title {
     transition: all 0.5s;
-    color: var(--color-hf-primary)
+    color: var(--color-body-primary)
 }
 
 @keyframes blink {
@@ -218,13 +227,14 @@ main.dark .home-title {
 .about-text{
     font-family: 'Sarala', sans-serif;
     font-size: 3vh;
-    color: var(--color-hf-secondary);
+    transition: all 0.5s;
+    color: var(--color-body-secondary);
     max-width: 500px;
 }
 
 main.dark .about-text {
     transition: all 0.5s;
-    color: var(--color-hf-primary);
+    color: var(--color-body-primary);
 }
 
 .skills{
@@ -239,13 +249,14 @@ main.dark .about-text {
 .skills h2 {
     font-family: 'Sarala', sans-serif;
     font-size: 5vh;
-    color: var(--color-hf-secondary);
+    transition: all 0.5s;
+    color: var(--color-body-secondary);
     padding: 0px 8%;
 }
 
 main.dark .skills h2 {
     transition: all 0.5s;
-    color: var(--color-hf-primary);
+    color: var(--color-body-primary);
 }
 
 .skills-icons {
@@ -269,13 +280,14 @@ main.dark .skills h2 {
     display: flex;
     justify-content: center;
     font-family: 'Sarala', sans-serif;
-    color: var(--color-hf-secondary);
+    transition: all 0.5s;
+    color: var(--color-body-secondary);
     font-weight: 700;
 }
 
 main.dark .skills-icons p {
     transition: all 0.5s;
-    color: var(--color-hf-primary);
+    color: var(--color-body-primary);
 }
 
 /* footer */
