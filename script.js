@@ -85,6 +85,7 @@ java.addEventListener("mouseout", function() {
 const darkorlightbtn = document.getElementById('btndarkorlight');
 
 var header = document.querySelector('header');
+var main = document.querySelector('main');
 
 darkorlightbtn.addEventListener('change', darkMode);
 
@@ -92,4 +93,5 @@ function darkMode() {
     console.log('Dark Mode ativo');
     header.classList.toggle('dark');
     menu.classList.toggle('dark');
+    main.classList.toggle('dark');
 }

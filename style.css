@@ -2,6 +2,7 @@
 
 :root{
     --color-body-primary: #F0F4F7;
+    --color-body-secondary: #4B4B4B;
     --color-hf-primary: #E5E5E5;
     --color-hf-secondary: #353535;
     --footer-bottom-color: #d8d1d1;
@@ -17,11 +18,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-body {
-    font-size: 100%;
-    background-color: var(--color-body-primary);
 }
 
 /* header */
@@ -146,6 +142,27 @@ header.dark .label .ball{
 
 /* main */
 
+hr {
+    height: 1px;
+    background-color: var(--color-hf-primary);
+    border: none;
+}
+
+main.dark hr{
+    background-color: var(--color-hf-secondary);
+}
+
+main {
+    font-size: 100%;
+    transition: all 0.5s;
+    background-color: var(--color-body-primary);
+}
+
+main.dark {
+    transition: all 0.5s;
+    background-color: var(--color-body-secondary);
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -168,6 +185,14 @@ header.dark .label .ball{
     border-right: 3px solid;
 }
 
+.home-title {
+    color: var(--color-hf-secondary);
+}
+
+main.dark .home-title {
+    transition: all 0.5s;
+    color: var(--color-hf-primary)
+}
 
 @keyframes blink {
     50% {
@@ -187,7 +212,12 @@ header.dark .label .ball{
 .about-text{
     font-family: 'Sarala', sans-serif;
     font-size: 3vh;
+    color: var(--color-hf-secondary);
     max-width: 500px;
+}
+
+main.dark .about-text {
+    color: var(--color-hf-primary);
 }
 
 .skills{
@@ -202,7 +232,12 @@ header.dark .label .ball{
 .skills h2 {
     font-family: 'Sarala', sans-serif;
     font-size: 5vh;
+    color: var(--color-hf-secondary);
     padding: 0px 8%;
+}
+
+main.dark .skills h2 {
+    color: var(--color-hf-primary);
 }
 
 .skills-icons {
@@ -226,7 +261,12 @@ header.dark .label .ball{
     display: flex;
     justify-content: center;
     font-family: 'Sarala', sans-serif;
+    color: var(--color-hf-secondary);
     font-weight: 700;
+}
+
+main.dark .skills-icons p {
+    color: var(--color-hf-primary);
 }
 
 /* footer */
