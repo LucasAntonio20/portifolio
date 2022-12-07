@@ -79,3 +79,17 @@ java.addEventListener("mouseover", function() {
 java.addEventListener("mouseout", function() {
     javatext.textContent = "";
 })
+
+/* Dark and Light Mode */
+
+const darkorlightbtn = document.getElementById('btndarkorlight');
+
+var header = document.querySelector('header');
+
+darkorlightbtn.addEventListener('change', darkMode);
+
+function darkMode() {
+    console.log('Dark Mode ativo');
+    header.classList.toggle('dark');
+    menu.classList.toggle('dark');
+}
