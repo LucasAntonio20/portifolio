@@ -19,20 +19,17 @@ github_icon.addEventListener("mouseout", function() {
 
 const menu = document.querySelector('.menu');
 const headerMenu = document.querySelector('.header-menu');
-const aboutHeader = document.getElementById('about-header');
-const skillsHeader = document.getElementById('skills-header');
+
+var itens = document.querySelector('.header-menu');
+
+console.log(itens);
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('allow');
     headerMenu.classList.toggle('allow');
 })
 
-aboutHeader.addEventListener('click',() => {
-    menu.classList.remove('allow');
-    headerMenu.classList.remove('allow');
-})
-
-skillsHeader.addEventListener('click',() => {
+headerMenu.addEventListener('click',() => {
     menu.classList.remove('allow');
     headerMenu.classList.remove('allow');
 })
