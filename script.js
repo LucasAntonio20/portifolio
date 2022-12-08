@@ -1,3 +1,5 @@
+/* Footer links*/
+
 const linkedin_icon = document.getElementById('linkedin_icon');
 const github_icon = document.getElementById('github_icon');
 
@@ -10,7 +12,7 @@ linkedin_icon.addEventListener("mouseout", function() {
 })
 
 github_icon.addEventListener("mouseover", function() {
-    if(footer.className === 'dark') this.style.color = "var(--github-dark-color)"
+    if(body.className === 'dark') this.style.color = "var(--github-dark-color)"
     else this.style.color = "var(--github-color)";
     
 })
@@ -19,12 +21,10 @@ github_icon.addEventListener("mouseout", function() {
      this.style.color = "var(--details-color)";
 })
 
+/* Menu */
+
 const menu = document.querySelector('.menu');
 const headerMenu = document.querySelector('.header-menu');
-
-var itens = document.querySelector('.header-menu');
-
-console.log(itens);
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('allow');
@@ -86,16 +86,8 @@ java.addEventListener("mouseout", function() {
 
 const darkorlightbtn = document.getElementById('btndarkorlight');
 
-var header = document.querySelector('header');
-var main = document.querySelector('main');
-var footer = document.querySelector('footer');
+const body = document.querySelector('body');
 
-darkorlightbtn.addEventListener('change', darkMode);
-
-function darkMode() {
-    console.log('Dark Mode ativo');
-    header.classList.toggle('dark');
-    menu.classList.toggle('dark');
-    main.classList.toggle('dark');
-    footer.classList.toggle('dark');
-}
+darkorlightbtn.addEventListener('change', () => {
+    body.classList.toggle('dark');
+});
