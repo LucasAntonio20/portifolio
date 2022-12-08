@@ -90,6 +90,10 @@ body.dark header .header-menu-item:hover{
     transform: scale(1);
 }
 
+.label img {
+    height: 16px;
+}
+
 body.dark header .label{
     transition: all 0.5s;
     background-color: var(--color-body-primary);
@@ -114,14 +118,6 @@ body.dark header .label .ball{
 
 .darkorlight:checked + label .ball {
     transform: translateX(24px);
-}
-
-.fa-moon {
-    color: #f1c40f;
-}
-
-.fa-sun {
-    color: #f39c12;
 }
 
 .menu {
