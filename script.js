@@ -1,26 +1,3 @@
-/* Footer links*/
-
-const linkedin_icon = document.getElementById('linkedin_icon');
-const github_icon = document.getElementById('github_icon');
-
-linkedin_icon.addEventListener("mouseover", function() {
-    this.style.color = "var(--linkedin-color)";
-})
-
-linkedin_icon.addEventListener("mouseout", function() {
-    this.style.color = "var(--details-color)"
-})
-
-github_icon.addEventListener("mouseover", function() {
-    if(body.className === 'dark') this.style.color = "var(--github-dark-color)"
-    else this.style.color = "var(--github-color)";
-    
-})
-
-github_icon.addEventListener("mouseout", function() {
-     this.style.color = "var(--details-color)";
-})
-
 /* Menu */
 
 const menu = document.querySelector('.menu');

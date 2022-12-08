@@ -10,9 +10,6 @@
     --footer-bottom-color: #DEE2E6;
     --footer-bottom-color-secondary: #212529;
     --details-color: #EE6060;
-    --linkedin-color: #0a66c2;
-    --github-color: #333333;
-    --github-dark-color: #f5f5f5;
 }
 
 * {
@@ -343,12 +340,12 @@ body.dark footer .footer-content h3 {
     color: var(--details-color);
 }
 
-.socials a i {
-    font-size: 1.1rem;
+.socials a img {
+    height: 1.1rem;
 }
 
-.socials a i:hover {
-    font-size: 1.3rem;
+.socials a img:hover {
+    height: 1.2rem;
 }
 
 .footer-bottom {
@@ -375,6 +372,7 @@ body.dark footer .footer-bottom p {
     color: #fff;
 }
 
+/* Media */
 @media (max-width:629px) {
     .header-menu {
         padding: 18px 20px;
